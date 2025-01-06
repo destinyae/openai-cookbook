@@ -155,7 +155,7 @@ properties:
 - `messages` - The entire history of messages between the user and the
   AI up until this point.
 - `tools` - A list of tools the model may call. Currently, only 
-  functions are supported as a tool., we'll we use the `tools` array we 
+  functions are supported as a tool., we'll use the `tools` array we 
   created earlier.
 
 ## Running our app with a simple input
@@ -201,7 +201,7 @@ to the console like this:
 }
 ```
 
-This response tells us that we should call one of our functions, as it contains the following key: `finish_reason: "tool_calls"`.
+This response tells us we should call one of our functions, as it contains the following key: `finish_reason: "tool_calls"`.
 
 The name of the function can be found in the
 `response.choices[0].message.tool_calls[0].function.name` key, which is set to
@@ -243,7 +243,7 @@ However, we won't need any arguments for this first function call.
 
 If we run the code again with the same input
 (`"Where am I located right now?"`), we'll see that `functionResponse`
-is an object filled with location about where the user is located right
+is an object filled with the location of where the user is located right
 now. In my case, that is Oslo, Norway.
 
 ```js
@@ -344,7 +344,7 @@ Based on your current location in Oslo, Norway and the weather (15°C and snowy)
 here are some activity suggestions:
 
 1. A visit to the Oslo Winter Park for skiing or snowboarding.
-2. Enjoy a cosy day at a local café or restaurant.
+2. Enjoy a cozy day at a local café or restaurant.
 3. Visit one of Oslo's many museums. The Fram Museum or Viking Ship Museum offer interesting insights into Norway’s seafaring history.
 4. Take a stroll in the snowy streets and enjoy the beautiful winter landscape.
 5. Enjoy a nice book by the fireplace in a local library.
